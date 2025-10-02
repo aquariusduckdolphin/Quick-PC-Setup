@@ -27,17 +27,18 @@ call :InstallApp "OBSProject.OBSStudio" "D:\OBS"
 call :InstallApp "Discord.Discord" "D:\Discord"
 call :InstallApp "Apple.iTunes" "D:\iTunes"
 
-:: Game Launchers
-call :InstallApp "Valve.Steam" "D:\Game Launchers\Steam"
-call :InstallApp "EpicGames.EpicGamesLauncher" "D:\Game Launchers\Epic Games"
-
-:: Browsers
-call :InstallApp "Brave.Brave" "D:\Brave"
-
 :: Keyboard & Mouse
 call :InstallApp "9PK9W5QV2PKX" "D:\Razer\Razer Cortex"
 call :InstallApp "RazerInc.RazerInstaller.Synapse4" "D:\Razer\Razer Synapse"
 call :InstallApp "9P1TBXR6QDCX" "D:\HyperX"
+
+:: Browsers
+call :InstallApp "Brave.Brave" "D:\Brave"
+
+
+:: Game Launchers
+call :InstallApp "Valve.Steam" "D:\Game Launchers\Steam"
+call :InstallApp "EpicGames.EpicGamesLauncher" "D:\Game Launchers\Epic Games"
 
 :: Game Dev Apps
 call :InstallApp "Microsoft.VisualStudio.2022.Community" "D:\Visual Stuio"
