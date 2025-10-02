@@ -2,16 +2,19 @@
 :: ----------------------------------
 set music_drive=F:
 set music_full_path=%music_drive%\Music
-set batch_folder= C:\Users\nvird\Downloads\PC Batch Setup\Batch_File.bat
-set batch_install_programs= C:\Users\nvird\Downloads\PC Batch Setup\Install_Programs.bat
+
+set base_batch_file_location= C:\Users\nvird\Downloads\PC Batch Setup
+set batch_folder= %base_batch_file_location%\Batch_File.bat
+set batch_install_programs= %base_batch_file_location%\Install_Programs.bat
 
 set user_input=
 :: ----------------------------------
 
 
+:: ----------------------------------
 :start
 echo ========================================
-echo	      App Installer Script
+echo	        PC Setup Script
 echo ========================================
 goto FreshInstall
 
@@ -42,6 +45,8 @@ echo Skipping Fresh Install ...
 goto CreateFolders
 :: ----------------------------------
 
+
+
 :: ----------------------------------
 :CreateFolders
 set /p user_input= Would you like to create folders in D: drive? (y/n): 
@@ -64,6 +69,8 @@ echo Skipping the folder creation ...
 goto BatchInstallPrograms
 :: ----------------------------------
 
+
+
 :: ----------------------------------
 :BatchInstallPrograms
 set /p user_input= Would you like install all programs? (y/n): 
@@ -80,6 +87,8 @@ goto CopyMusic
 echo Skipping the Batch Install of programs ...
 goto CopyMusic
 :: ----------------------------------
+
+
 
 :: ----------------------------------
 :CopyMusic
